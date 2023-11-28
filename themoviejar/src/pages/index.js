@@ -1,7 +1,7 @@
 // pages/index.js
 import { useRouter } from 'next/router';
 import CreateJarForm from '../components/createJarForm';
-import styles from '../styles/home.module.css';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const router = useRouter();
