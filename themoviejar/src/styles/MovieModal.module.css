@@ -1,0 +1,67 @@
+/* MovieModal.module.css */
+
+.movie-modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.movie-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.release-date,
+.vote-average,
+.genres {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.overview {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.movie-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.movie-modal-button {
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+

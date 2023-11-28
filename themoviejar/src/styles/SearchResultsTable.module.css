@@ -1,0 +1,16 @@
+/* styles/SearchResultsTable.module.css */
+.search-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.search-results-table th, .search-results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.search-results-table th {
+    background-color: #f2f2f2;
+}
