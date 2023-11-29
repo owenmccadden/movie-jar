@@ -1,0 +1,42 @@
+# Movie Jar
+
+Simple web app to help you your friends choose what movie you should watch.
+
+- Create a movie jar
+- Share it!
+- Add movies you want to watch
+- When it comes time to watch a movie, select a movie from the jar
+
+##  Architecture 
+- AWS Backend – API Gateway, Lambda, Dynamodb
+- Next.js Frontend – UI and API routes
+
+#### Dynamo Jars Table
+
+- id – uuid (partition key)
+- title – string
+- movies – list of strings (list of tmdb movie IDs)
+
+#### AWS Jars API
+
+- /jar
+  - /create: create a new jar and add to jars table
+  - /get: get a jar by ID
+  - /movie
+    - /put: add a movie ID to list of movies for a jar
+    - /draw: randomly select a movie id from a jar
+
+#### Next.js Routes
+
+- /api/createJar: call /jar/create
+- /api/addMovie: call /jar/movie/put
+- /api/draw: call /jar/movie/draw
+- /api/searchMovie: call tmdb search api
+
+## Movie Data
+
+https://developer.themoviedb.org/docs
+
+  
+
+
