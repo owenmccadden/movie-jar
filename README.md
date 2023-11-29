@@ -28,9 +28,9 @@ Simple web app to help you your friends choose what movie you should watch.
 
 #### Next.js Routes
 
-- /api/createJar: call /jar/create
-- /api/addMovie: call /jar/movie/put
-- /api/draw: call /jar/movie/draw
+- /api/createJar: call /jar/create to create a new jar
+- /api/addMovie: call /jar/movie/put to add a movie to your jar
+- /api/draw: call /jar/movie/draw to get a movie id then get movie details from the tmdb api
 - /api/searchMovie: call tmdb search api
 
 ## Movie Data
